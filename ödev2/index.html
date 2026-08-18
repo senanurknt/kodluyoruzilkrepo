@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript To Do List - Kodluyoruz</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Özel Stil Dosyası -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Bootstrap Toast Bildirimleri -->
+    <div style="position: fixed; top: 15px; right: 15px; z-index: 9999">
+      <div
+        class="toast success hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-delay="3000"
+      >
+        <div class="toast-body">Listeye eklendi.</div>
+      </div>
+      <div
+        class="toast error hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-delay="3000"
+      >
+        <div class="toast-body">Listeye boş ekleme yapamazsınız!</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          
+          <h2>Yapılacaklar Listesi</h2>
+          <div class="input-group">
+            <input
+              type="text"
+              id="task"
+              placeholder="Bugün ne yapacaksın?"
+              autofocus
+            />
+            <span onclick="newElement()" id="liveToastBtn" class="button"
+              >Ekle</span
+            >
+          </div>
+        </div>
+
+        <ul id="list">
+          <li>3 Litre Su İç</li>
+          <li>Ödevleri Yap</li>
+          <li>En Az 3 Saat Kodlama Yap</li>
+          <li>Yemek Yap</li>
+          <li>50 Sayfa Kitap Oku</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bootstrap & jQuery Kütüphaneleri -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  JS -->
+    <script src="todolist.js"></script>
+  </body>
+</html>
