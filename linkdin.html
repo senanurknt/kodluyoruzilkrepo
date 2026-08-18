@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Özel CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR:  -->
+    <nav class="navbar navbar-expand navbar-light bg-white border-bottom fixed-top navbar-custom p-0">
+        <div class="container-fluid p-0">
+            
+            <!-- 2. Logo:  -->
+            <a class="navbar-brand navbar-logo" href="#">
+                <i class="fa-brands fa-linkedin text-primary fs-2"></i>
+            </a>
+
+            <!-- 3. Arama Alanı:  -->
+            <div class="search-box me-auto">
+                <input type="text" class="form-control form-control-sm bg-light border-0" placeholder="Arama Yap">
+            </div>
+
+            <!-- 4 & 5 & 6. Menüler:  -->
+            <div class="d-flex align-items-center me-5">
+                <a href="#" class="nav-item-custom"><i class="fa-solid fa-house fs-5"></i><span>Ana Sayfa</span></a>
+                <a href="#" class="nav-item-custom"><i class="fa-solid fa-user-group fs-5"></i><span>Ağım</span></a>
+                <a href="#" class="nav-item-custom"><i class="fa-solid fa-briefcase fs-5"></i><span>İş İlanları</span></a>
+                <a href="#" class="nav-item-custom"><i class="fa-solid fa-comment-dots fs-5"></i><span>Mesajlaşma</span></a>
+                <a href="#" class="nav-item-custom"><i class="fa-solid fa-bell fs-5"></i><span>Bildirimler</span></a>
+                
+                <!-- 6. BEN Kategorisi -->
+                <a href="#" class="nav-item-custom border-start ps-2">
+                    <img src="https://picsum.photos/100/100?random=1" class="nav-avatar" alt="Ben">
+                    <span>Ben <i class="fa-solid fa-caret-down"></i></span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 9. LAYOUT:  -->
+    <div class="container my-3">
+        <!-- 10. RESPONSIVE YAPI:-->
+        <div class="row g-3">
+
+            <!-- ================= SOL PANEL  ================= -->
+            <div class="col-2">
+                
+                <!-- Profil Kartı -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 mb-2 text-center overflow-hidden">
+                    <div class="profile-card-header"></div>
+                    
+                    <!-- 7 & 11. Cengiz Hoca'nın resmi ortalandı, -->
+                    <img src="https://picsum.photos/150/150?random=99" class="profile-avatar" alt="Profil Fotoğrafı">
+                    
+                    <div class="card-body pt-5 px-2">
+                        <!-- 12. Yazılar eski haline getirildi -->
+                        <h6 class="fw-bold mb-0 fs-6">Cengiz Cemal Mataracı</h6>
+                        <p class="text-muted extra-small mb-2" style="font-size: 11px;">Software Developer at Navlungo</p>
+                        <hr class="my-2">
+                        
+                        <div class="d-flex justify-content-between align-items-center text-muted" style="font-size: 11px;">
+                            <span>Profilinizi kimler görüntüledi</span>
+                            <span class="text-primary fw-bold">447</span>
+                        </div>
+                        <!-- 13. Sayfa bildirimi  -->
+                        <div class="d-flex justify-content-between align-items-center text-muted mt-1" style="font-size: 11px;">
+                            <span>Sayfa Bildirimleri</span>
+                            <span class="text-primary fw-bold ms-auto">10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. En Yeni Bölümü: -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 p-2 sticky-section">
+                    <span class="fw-bold text-muted mb-2" style="font-size: 12px;">En Yeni</span>
+                    <ul class="list-unstyled text-muted mb-0" style="font-size: 12px;">
+                        <li class="mb-1"><i class="fa-solid fa-hashtag me-1"></i>kodluyoruz</li>
+                        <li class="mb-1"><i class="fa-solid fa-hashtag me-1"></i>front-end</li>
+                        <li class="mb-1"><i class="fa-solid fa-hashtag me-1"></i>html</li>
+                        <li class="mb-1"><i class="fa-solid fa-hashtag me-1"></i>css</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- ================= ORTA PANEL ================= -->
+            <div class="col-6">
+                
+                <!-- Gönderi Başlat Kartı -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 p-3 mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://picsum.photos/150/150?random=99" class="rounded-circle me-2" width="40" height="40">
+                        <!-- 15. Placeholder düzeltildi ve Bootstrap pill input yapıldı -->
+                        <input type="text" class="form-control rounded-pill bg-light border" placeholder="Bir gönderi başlatın">
+                    </div>
+                    
+                    <!--  Buton düzenlemeleri ve özel renk tanımları -->
+                    <div class="d-flex justify-content-between pt-2">
+                        <button class="btn btn-light btn-sm text-muted border-0"><i class="fa-solid fa-image icon-photo me-1"></i> Fotoğraf</button>
+                        <button class="btn btn-light btn-sm text-muted border-0"><i class="fa-solid fa-video icon-video me-1"></i> Video</button>
+                        <button class="btn btn-light btn-sm text-muted border-0"><i class="fa-solid fa-calendar-days icon-event me-1"></i> Etkinlik</button>
+                        <button class="btn btn-light btn-sm text-muted border-0"><i class="fa-solid fa-newspaper icon-article me-1"></i> Yazı Yaz</button>
+                    </div>
+                </div>
+
+                <!-- Post Kartı -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 mb-3">
+                    <div class="card-body p-3">
+                        
+                        <!--  Kullanıcı Adı Üste, Meslek Ortaya, Paylaşım Süresi Aşağı Hizada -->
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://picsum.photos/50/50?random=12" class="rounded-circle me-2" width="48" height="48">
+                            <div class="d-flex flex-column justify-content-between">
+                                <span class="fw-bold lh-1" style="font-size: 14px;">David J. Malan</span>
+                                <span class="text-muted lh-1 my-1" style="font-size: 12px;">I teach CS50</span>
+                                <span class="text-muted lh-1" style="font-size: 11px;">25a • <i class="fa-solid fa-earth-americas"></i></span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis ms-auto text-muted"></i>
+                        </div>
+
+                        <p class="card-text" style="font-size: 14px;">They have done great things! Tebrikler Kodluyoruz!</p>
+                        <img src="https://picsum.photos/600/350?random=20" class="img-fluid rounded mb-2" alt="Post">
+
+                        <!-- 19. Beğenme/Kalp/Alkış ikonları -->
+                        <div class="d-flex align-items-center text-muted border-bottom pb-2" style="font-size: 12px;">
+                            <i class="fa-solid fa-thumbs-up text-primary reaction-icon"></i>
+                            <i class="fa-solid fa-heart text-danger reaction-icon"></i>
+                            <i class="fa-solid fa-hands-clapping text-success reaction-icon"></i>
+                            <span>958</span>
+                        </div>
+
+                        <!--  Post Alt Butonlarına Bootstrap -->
+                        <div class="d-flex justify-content-around pt-2">
+                            <button class="btn btn-light btn-sm text-muted border-0 w-25"><i class="fa-regular fa-thumbs-up me-1"></i> Beğen</button>
+                            <button class="btn btn-light btn-sm text-muted border-0 w-25"><i class="fa-regular fa-comment me-1"></i> Yorum Yap</button>
+                            <button class="btn btn-light btn-sm text-muted border-0 w-25"><i class="fa-solid fa-share me-1"></i> Paylaş</button>
+                            <button class="btn btn-light btn-sm text-muted border-0 w-25"><i class="fa-solid fa-paper-plane me-1"></i> Gönder</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= SAĞ PANEL ================= -->
+            <div class="col-3">
+                
+                <!-- 21. Akışınıza Ekleyin: 
+                  -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-bold" style="font-size: 13px;">Akışınıza ekleyin</span>
+                        <i class="fa-solid fa-circle-info text-muted"></i>
+                    </div>
+
+                    <!-- -->
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa-solid fa-cube text-primary fs-3 me-2"></i>
+                        <div class="flex-grow-1">
+                            <div class="fw-bold" style="font-size: 12px;">Codecraft</div>
+                            <button class="btn btn-outline-dark btn-sm rounded-pill py-0 px-2 mt-1" style="font-size: 11px;">+ Takip Et</button>
+                        </div>
+                    </div>
+
+                    <!-- -->
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa-solid fa-podcast text-warning fs-3 me-2"></i>
+                        <div class="flex-grow-1">
+                            <div class="fw-bold" style="font-size: 12px;">Podfresh</div>
+                            <button class="btn btn-outline-dark btn-sm rounded-pill py-0 px-2 mt-1" style="font-size: 11px;">+ Takip Et</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 22. Bugünün En Çok İzlenen Eğitimleri: -->
+                <div class="card bg-white border-0 shadow-sm rounded-3 p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="fw-bold" style="font-size: 13px;">Bugünün en çok izlenen eğitimleri</span>
+                        <i class="fa-solid fa-circle-info text-muted"></i>
+                    </div>
+                    <ol class="ps-3 mb-0" style="font-size: 12px;">
+                        <li class="fw-bold">The Six Morning Habits... <br><span class="text-muted fw-normal">Pete Mocakatalis</span></li>
+                        <li class="fw-bold mt-2">Unconscious Bias <br><span class="text-muted fw-normal">Stacey Gordon</span></li>
+                    </ol>
+                </div>
+
+                <!-- 23. Sağ Panel En Alt Bölüm:  -->
+                <div class="p-2 sticky-section text-center">
+                    <div class="d-flex flex-wrap gap-2 justify-content-center text-muted mb-2" style="font-size: 11px;">
+                        <a href="#" class="text-muted text-decoration-none">Hakkında</a>
+                        <a href="#" class="text-muted text-decoration-none">Erişilebilirlik</a>
+                        <a href="#" class="text-muted text-decoration-none">Yardım Merkezi</a>
+                        <a href="#" class="text-muted text-decoration-none">Gizlilik ve Koşullar</a>
+                    </div>
+                    <p class="text-muted" style="font-size: 11px;">LinkedIn Corporation © 2026</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 24. MESAJLAŞMA: -->
+    <div class="messaging-box border shadow-sm p-2 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="https://picsum.photos/150/150?random=99" class="rounded-circle me-2" width="28" height="28">
+            <span class="fw-bold" style="font-size: 13px;">Mesajlaşma</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-ellipsis me-2 text-muted"></i>
+            <i class="fa-solid fa-pen-to-square me-2 text-muted"></i>
+            <i class="fa-solid fa-chevron-up text-muted"></i>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>/* Genel Sayfa Ayarları */
+body {
+    background-color: #f3f2ef;
+    
+    padding-top: 60px; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+eme
+/* Navbar */
+.navbar-custom {
+    height: 52px;
+    background-color: #ffffff;
+}
+
+.navbar-logo {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+
+.search-box {
+    max-width: 280px;
+    margin-right: 1.5rem;
+}
+
+.nav-item-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+.nav-item-custom:hover {
+    color: #000000;
+}
+
+.nav-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sol Panel - Profil Kartı */
+.profile-card-header {
+    height: 60px;
+    background-color: #a0b4b7;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid #ffffff !important;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+
+/* Sticky (Sabitlenen) Bölümler */
+.sticky-section {
+    position: sticky;
+    top: 4rem;
+    overflow: visible;
+}
+
+/* Gönderi Oluşturma Buton İkon Renkleri (Fill / Color) */
+.icon-photo { color: #70B5F9; fill: #70B5F9; }
+.icon-video { color: #7FC15E; fill: #7FC15E; }
+.icon-event { color: #E7A33E; fill: #E7A33E; }
+.icon-article { color: #F5987E; fill: #F5987E; }
+
+/* Reaksiyon İkonları Margin */
+.reaction-icon {
+    margin-right: 4px;
+}
+
+/* Alt Sağ Mesajlaşma Kutusu */
+.messaging-box {
+    width: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 1030;
+    border-radius: 8px 8px 0 0;
+}</style>

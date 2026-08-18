@@ -1,0 +1,43 @@
+/*  Bütün sayfanın arkaplan rengi */
+body {
+    background-color: #fafafa;
+    
+    padding-top: 54px; 
+}
+
+/*  Navbar */
+.navbar {
+    height: 54px !important;
+    background-color: #ffffff;
+}
+
+/*  Logo  */
+.logo {
+    margin-left: 192px;
+}
+
+/*  arama simgesi */
+.search-input::placeholder {
+    background-image: url('assets/search.png'); /* assets klasöründeki arama simgesi */
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 14px 14px;
+    padding-left: 28px;
+    text-align: left;
+}
+
+
+.middlearea {
+    max-height: 200px !important;
+}
+
+
+.stickysidebar {
+    position: sticky;
+    top: 70px; 
+}
+
+.rightpanel {
+    background-color: #ffffff;
+    border: none !important;
+}
