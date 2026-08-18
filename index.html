@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Saat ve Karşılama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0370dd55;
+            color: #757979;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 750px;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #e07a1e;
+        }
+        .greeting {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        #myName {
+            color: #e07a1e;
+            font-weight: bold;
+        }
+        #myClock {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #e07a1e;
+        }
+        .info {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #c97d32;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="greeting">Merhaba, <span id="myName"></span>! Hoş geldin!</div>
+        <div id="myClock"></div>
+        <div class="info">
+            tarihinde <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın Javascript bölümü 1. Ödevindesiniz.
+        </div>
+    </div>
+
+    <!-- JS dosyasını en altta bağlıyoruz -->
+    <script src="clock.js"></script>
+</body>
+</html>
